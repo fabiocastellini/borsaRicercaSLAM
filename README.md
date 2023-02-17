@@ -18,6 +18,7 @@ _This project, funded by University of Verona, is aimed at applying a SLAM (simu
 
 ## _Project phases:_
  ___1. Choosing a SLAM algorithm___
+
 The whole project is based on how the sensed pointclouds are stitched together to create a semi-dense 3D reconstruction of the surround environment. 
 
  ___2. Indoor environment's 3D cloud processing___

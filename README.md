@@ -10,14 +10,15 @@ _This project, funded by University of Verona, is aimed at applying a SLAM (simu
 - locate and classify the general purpose objects inside the environment;
 - quantify and spatially localize the free and occupied 3D space, in order to navigate the room without colliding with objects such as chairs, tables, sofa.
 
-## _Main utilized tools:_ 
+## _Mainly utilized tools:_ 
 - ASUS Xtion PRO LIVE depth camera;
 - ROS (Noetic Ubuntu 20.04);
 - Python3;
 - SLAM algorithm: RTAB SLAM.
 
 ## _Project phases:_
-
+1. # _Choosing a SLAM algorithm_
+The whole project is based on how the sensed pointclouds are stitched together to create a semi-dense 3D reconstruction of the surround environment. 
 
 #### _The following video shows a demo performed in a corridor of the University of Verona:_
 

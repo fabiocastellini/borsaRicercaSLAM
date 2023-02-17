@@ -1,4 +1,10 @@
-# borsaRicercaSLAM
+# _Research Project entitled "Mappatura e localizzazione simultanea di ambienti indoor con sensori RGBD" (SLAM of indoor environments exploiting a depth camera)_
+##### Authors: Michele Sandrini, Fabio Castellini (univr 2021-2022)
+## _How to install the packages in your ROS2 workspace:_
+- Refer to the official documentation to install ROS2 Foxy (https://docs.ros.org/en/foxy/Installation.html)
+- Refer to the official documentation to install Unity (https://unity3d.com/get-unity/download - https://unity-ros2.readthedocs.io/en/latest/)
+- Copy the "robust_wall_follower", "turtlebot3_description", "turtlebot3_visualizer" packages in your ROS2 workspace (src folder)
+- 
 This repo contains a brief report of the "Mappatura e localizzazione simultanea di ambienti indoor con sensori RGBD" project
 
 #### _The following video shows a demo performed in a corridor of the University of Verona:_

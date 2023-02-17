@@ -17,8 +17,15 @@ _This project, funded by University of Verona, is aimed at applying a SLAM (simu
 - SLAM algorithm: RTAB SLAM.
 
 ## _Project phases:_
-1. # _Choosing a SLAM algorithm_
+ ___1. Choosing a SLAM algorithm___
 The whole project is based on how the sensed pointclouds are stitched together to create a semi-dense 3D reconstruction of the surround environment. 
+
+ ___2. Indoor environment's 3D cloud processing___
+
+
+ ___3. Real-time visualization and storage of the results___
+ 
+ ___4. How to codify the retrieved information to be usable for blind people___
 
 #### _The following video shows a demo performed in a corridor of the University of Verona:_
 

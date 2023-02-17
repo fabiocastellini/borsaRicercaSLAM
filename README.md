@@ -8,7 +8,7 @@ _This project, funded by University of Verona, is aimed at applying a SLAM (simu
 - given an RGBD camera, exploit the sensed depth maps to generate a pointcloud of the explored environment using a SLAM algorithm;
 - while the 3D cloud of point is generating, try to find the walls assuming that the subject is in a squared/rectangular room with a maximum of 6 walls (front/back/left/right/ceiling/floor);
 - locate and classify the general purpose objects inside the environment;
-- quantify and spaciatilly localize the free and occupied 3D space, in order to navigate the room without colliding with objects such as chairs, tables, sofa.
+- quantify and spatially localize the free and occupied 3D space, in order to navigate the room without colliding with objects such as chairs, tables, sofa.
 
 ## _Main utilized tools:_ 
 - ASUS Xtion PRO LIVE depth camera;

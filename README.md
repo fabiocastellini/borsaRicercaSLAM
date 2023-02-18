@@ -19,9 +19,19 @@ _This project, funded by University of Verona, is aimed at applying a SLAM (simu
 ## _Project phases:_
  ___1. Choosing a SLAM algorithm___
 
-The whole project is based on how the sensed pointclouds are stitched together to create a semi-dense 3D reconstruction of the surround environment. 
+The whole project is based on how the sensed pointclouds are stitched together to create a semi-dense 3D reconstruction of the surrounding environment. So, a Simultaneous Localization And Mapping (SLAM) algorithm was used, in particular I started with ORB SLAM but then switched to RTAB (Real-Time Appearance-Based Mapping) SLAM (http://wiki.ros.org/rtabmap_ros) for ease of integration with the ROS environment. Exploiting the RGBD camera, pointclouds are produced and stitched together based on the detected features to create the complete map of the sensed environment while odometry (pose of the camera) is estimated. The created map (with respect to a fixed reference frame that is the initial pose of the camera) can be saved to be later used for navigation purposes (assuming that the environment is static). 
+
 
  ___2. Indoor environment's 3D cloud processing___
+
+While the SLAM algorithm is running, the complete pointcloud is published on a ROS topic and it's used to fit planes with a developed iterative RANSAC algorithm. This way, the 6 main wall are extracted and classified with respect to the initial camera pose. Meaning that the left wall corresponds to the wall the initially was on the left with respect to the initial pose of the camera. The same reasoning can be made for the right, front, back walls; also, ceiling and floor are detected but don't depend on the rotation about the vertical axis.
+
+Another important feature is the object detection and classification. General purpose objects such as chair, table, sofa, plant, laptop, mouse...are detected and classified using the pre-trained YoloV3 CNN. Once the 2D bounding box is retrieved, the coorisponding 3D center of mass is computed exploiting the depth map given by the camera. The idea is to assign a signature of the object in the 3D map produced by SLAM and to update the distance and angle with respect to the camera wheneever the latter is moved. This way, imaging that the camera is holded by a blind person, if he moves the distance to the surrounding objects is updated to avoid as much as possible collisions.
+
+Finally, exploiting the OctoMap package (http://wiki.ros.org/octomap) a real-time representation of the occupied and free 3D space is given. The produced information is used to compute if the cilindric volume around the camera (person) is free or not, paying attention to the potential obstacles at floor level.
+
+
+
 
 
  ___3. Real-time visualization and storage of the results___

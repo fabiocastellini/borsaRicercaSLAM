@@ -32,17 +32,15 @@ Finally, exploiting the OctoMap package (http://wiki.ros.org/octomap) a real-tim
 
 
 
-
-
  ___3. Real-time visualization and storage of the results___
  
- ___4. How to codify the retrieved information to be usable for blind people___
-
-#### _The following video shows a demo performed in a corridor of the University of Verona:_
+To visualize the obtained results (in real-time), ROS and particularly RVIZ is used. To store and later exploit my visual-numeric results those are stored in 3 json fluxes representing the detected walls (distance, classification, angle, pointcloud), the detected objects (distance, 3D position, classification), the occupied space around the camera (boolean representing free or not, number of points/volumetric unit if occupied). The 3 json fluxes are then codified into spacial audio to be interpreted by blind people.
+ 
+#### _The following video shows a demo performed in a corridor of the University of Verona (almost free corridor):_
 
 https://user-images.githubusercontent.com/76775232/219665091-de5a09a2-e82b-4284-9d29-5439d3c4e9ce.mp4
 
-#### _The following video shows a demo performed in a corridor of the University of Verona:_
+#### _The following video shows a demo performed in a corridor of the University of Verona (fairly cluttered corridor):_
 
 https://user-images.githubusercontent.com/76775232/219665111-d7fd63f3-5b09-449b-a71f-351c2f6e546a.mp4
 

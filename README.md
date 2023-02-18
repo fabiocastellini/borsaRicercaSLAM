@@ -47,3 +47,8 @@ https://user-images.githubusercontent.com/76775232/219665111-d7fd63f3-5b09-449b-
 
 #### _Object detection qualitative example:_
 ![26](https://user-images.githubusercontent.com/76775232/219668593-0eb3c447-dad2-4269-a4b6-2c39176d683f.png)
+
+
+## _Conclusions:_
+
+The main objectives that the company and the supervisor Francesco Setti asked were accomplished. Several demos (visual but also rosbags and json information) were recorded and will later exploited by a partner to handle the 3D spacial audio implementation.

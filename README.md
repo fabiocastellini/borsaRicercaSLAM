@@ -1,5 +1,5 @@
 # _Research Project entitled "Mappatura e localizzazione simultanea di ambienti indoor con sensori RGBD" (SLAM of indoor environments exploiting a depth camera)_
-##### Author: Fabio Castellini (UniVR 2021-2022)
+##### Author: Fabio Castellini (UniVR 2021-2023)
 
 ## _Abstract:_
 _This project, funded by University of Verona, is aimed at applying a SLAM (simultaneous localization and mapping) algorithm through the use of an RGBD camera (ASUS Xtion PRO LIVE (http://xtionprolive.com/asus-xtion-pro-live)). The overall system was implemented in ROS and programmed with Python3. It is thought for helping blind people while navigating in unknow indoor environments. My work focused on the visual characterization and semantic description of the indoor environment: walls detection and classification, object detection and classification, and collision avoidance. My data stream was then exploited by a partner of this project, to translate it into 3D spatial audio information that will be heard by the blind subject._

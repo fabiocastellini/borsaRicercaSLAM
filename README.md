@@ -14,7 +14,8 @@ _This project, funded by University of Verona, is aimed at applying a SLAM (simu
 - ASUS Xtion PRO LIVE depth camera;
 - ROS (Noetic Ubuntu 20.04);
 - Python3;
-- SLAM algorithm: RTAB SLAM.
+- SLAM algorithm: RTAB SLAM;
+- YoloV3 CNN (https://github.com/leggedrobotics/darknet_ros).
 
 ## _Project phases:_
  ___1. Choosing a SLAM algorithm___
